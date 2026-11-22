@@ -86,16 +86,16 @@ TEXTS = {
         "prediction_result": "🔍 Prediction Result",
         "health_categories": {
             0: {
-                "name": "Category E",
+                "name": "Category A",
                 "icon": "🔴",
                 "color": "#dc3545",
-                "description": "Predicted HSR-derived category E",
+                "description": "Predicted HSR-derived category A",
             },
             1: {
-                "name": "Category D",
+                "name": "Category B",
                 "icon": "🟠",
                 "color": "#fd7e14",
-                "description": "Predicted HSR-derived category D",
+                "description": "Predicted HSR-derived category B",
             },
             2: {
                 "name": "Category C",
@@ -104,16 +104,16 @@ TEXTS = {
                 "description": "Predicted HSR-derived category C",
             },
             3: {
-                "name": "Category B",
+                "name": "Category D",
                 "icon": "🟢",
                 "color": "#28a745",
-                "description": "Predicted HSR-derived category B",
+                "description": "Predicted HSR-derived category D",
             },
             4: {
-                "name": "Category A",
+                "name": "Category E",
                 "icon": "💚",
                 "color": "#20c997",
-                "description": "Predicted HSR-derived category A",
+                "description": "Predicted HSR-derived category E",
             },
         },
         "confidence": "Model-Estimated Probability",
@@ -230,16 +230,16 @@ TEXTS = {
         "prediction_result": "🔍 预测结果",
         "health_categories": {
             0: {
-                "name": "E类",
+                "name": "A类",
                 "icon": "🔴",
                 "color": "#dc3545",
-                "description": "预测的HSR衍生E类",
+                "description": "预测的HSR衍生A类",
             },
             1: {
-                "name": "D类",
+                "name": "B类",
                 "icon": "🟠",
                 "color": "#fd7e14",
-                "description": "预测的HSR衍生D类",
+                "description": "预测的HSR衍生B类",
             },
             2: {
                 "name": "C类",
@@ -248,16 +248,16 @@ TEXTS = {
                 "description": "预测的HSR衍生C类",
             },
             3: {
-                "name": "B类",
+                "name": "D类",
                 "icon": "🟢",
                 "color": "#28a745",
-                "description": "预测的HSR衍生B类",
+                "description": "预测的HSR衍生D类",
             },
             4: {
-                "name": "A类",
+                "name": "E类",
                 "icon": "💚",
                 "color": "#20c997",
-                "description": "预测的HSR衍生A类",
+                "description": "预测的HSR衍生E类",
             },
         },
         "confidence": "模型估计概率",
@@ -369,7 +369,7 @@ with col4:
 @st.cache_resource
 def load_model():
     try:
-        return joblib.load("XGBoost_retrained_model.pkl")
+        return joblib.load("Randomforest_retrained_model.pkl")
     except Exception as e:
         st.error(f"Model loading failed: {e}")
         return None
