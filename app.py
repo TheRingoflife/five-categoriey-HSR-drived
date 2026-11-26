@@ -33,14 +33,17 @@ TEXTS = {
         "subtitle": "Five-Category Letter-Grade Classification (A–E)",
         "description": (
             "This prototype uses a locked random forest model and five predictors "
-            "derived from routinely available on-pack information to generate an "
-            "approximate five-category HSR-derived classification for prepackaged "
-            "ready foods."
+            "derived from routinely available on-pack information to approximate "
+            "constructed Health Star Rating (HSR)-derived classifications for Chinese "
+            "ready foods. The five study-defined categories (A–E) regroup HSR ratings "
+            "according to study-specific thresholds. Their five-colour display was "
+            "inspired by Nutri-Score, but the scoring and classification criteria "
+            "are distinct."
         ),
         "target_audience": "🎯 Intended Users",
         "audience_desc": (
-            "Designed for researchers and public-health practitioners exploring "
-            "food-supply monitoring in settings where complete HSR inputs are unavailable."
+            "Intended for researchers and public health practitioners investigating "
+            "reduced-input approaches to food classification in data-constrained settings."
         ),
         "problem_statement": "📊 Problem Statement",
         "problem_desc": (
@@ -49,19 +52,22 @@ TEXTS = {
         ),
         "solution": "💡 Prototype Approach",
         "solution_desc": (
-            "The locked model uses five predictors derived from on-pack information—"
-            "sodium, energy, total fat, NOVA 4 status and protein—to approximate one "
-            "of five HSR-derived categories and provides SHAP-based explanations of "
-            "individual predictions."
+            "The locked random forest model uses five predictors derived from on-pack "
+            "information—sodium, energy, total fat, NOVA 4 status and protein—to "
+            "approximate one of the five study-defined HSR-derived categories (A–E) "
+            "and provides SHAP-based explanations of individual model predictions."
         ),
         "mission": "🚀 Intended Application",
         "mission_desc": (
-            "This prototype demonstrates a reduced-input approach for exploratory "
-            "food-supply monitoring and comparisons among products within the same "
-            "ready-food category when complete inputs for direct HSR calculation are "
-            "unavailable. The A–E outputs are predicted HSR-derived categories and "
-            "should not be interpreted as formal Health Star Ratings, Nutri-Score "
-            "grades or independent assessments of overall product healthfulness."
+            "This prototype serves as a proof of concept for approximating "
+            "constructed HSR-derived classifications from reduced on-pack inputs. "
+            "The predicted A–E categories should not be interpreted as formally "
+            "calculated Health Star Ratings, official Nutri-Score classifications "
+            "or independent assessments of product healthfulness. External "
+            "validation against HSR ratings calculated from fully observed inputs "
+            "in independent samples and broader food categories is required before "
+            "exploratory food-supply monitoring, within-category comparisons or "
+            "consumer-facing and regulatory applications can be considered."
         ),
         "input_variables": "🔢 Available On-Pack Input Variables",
         "sodium_label": "Sodium (mg/100 g)",
@@ -181,12 +187,14 @@ TEXTS = {
         "title": "🍱 HSR衍生正面标签原型",
         "subtitle": "五分类字母等级标签（A–E）",
         "description": (
-            "本原型使用已锁定的随机森林模型，根据包装信息获得的五项预测变量，"
-            "为预包装即食食品生成近似的五分类HSR衍生结果。"
+            "本原型使用已锁定的随机森林模型，根据食品包装上常规标示的信息所构建的"
+            "五项预测变量，近似预测中国预制食品的构造HSR衍生分类。"
+            "五个研究自定义类别（A–E）根据本研究设定的阈值对HSR评分进行重新分组。"
+            "其五色展示设计借鉴了Nutri-Score，但两者的评分算法和分类标准不同。"
         ),
         "target_audience": "🎯 预期使用者",
         "audience_desc": (
-            "面向在缺少完整HSR计算所需信息的情况下，开展食品供应监测探索的"
+            "面向在数据受限情境下研究基于有限包装信息的食品分类方法的"
             "研究人员和公共卫生实践人员。"
         ),
         "problem_statement": "📊 问题陈述",
@@ -196,16 +204,18 @@ TEXTS = {
         ),
         "solution": "💡 原型方法",
         "solution_desc": (
-            "已锁定的模型使用钠、能量、总脂肪、NOVA 4状态和蛋白质五项"
-            "基于包装信息的预测变量，近似预测五个HSR衍生类别之一，并使用"
-            "SHAP解释各输入变量对单次预测的贡献。"
+            "已锁定的随机森林模型使用五项基于包装信息的预测变量——钠、能量、"
+            "总脂肪、NOVA 4状态和蛋白质——近似预测五个研究自定义HSR衍生类别"
+            "（A–E）之一，并通过SHAP解释各输入变量对模型预测输出的贡献。"
         ),
         "mission": "🚀 预期应用",
         "mission_desc": (
-            "当无法获得直接计算HSR所需的完整信息时，本原型展示了一种基于较少"
-            "输入的探索性食品供应监测方法，并可辅助比较同一即食食品类别内产品"
-            "的相对差异。A–E为预测的HSR衍生类别，不代表正式的健康星级评分或"
-            "Nutri-Score等级，也不构成对产品整体健康程度的独立评价。"
+            "本原型旨在验证利用有限的食品包装信息近似预测构造HSR衍生分类的"
+            "可行性。预测的A–E类别不应被解释为正式计算得到的健康星级评分、"
+            "官方Nutri-Score分类，也不构成对产品健康程度的独立评价。"
+            "在考虑将其用于探索性食品供应监测、同类产品比较、面向消费者或监管"
+            "应用之前，仍需在独立样本和更广泛的食品类别中，基于完整观测输入"
+            "计算的HSR评分进行外部验证。"
         ),
         "input_variables": "🔢 包装上可获得的输入变量",
         "sodium_label": "钠（mg/100 g）",
