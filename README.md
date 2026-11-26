@@ -1,4 +1,5 @@
 # nutrition-evaluation-five-level
-This project develops a machine learning model to assess the nutritional quality of packaged foods, based on the Australian Health Star Rating (HSR) system. It predicts health ratings using nutritional features, aiding in public health research and informed consumer choices.
 
-Training code will be made available upon acceptance.
+This project presents an explainable machine learning model for approximating constructed Health Star Rating (HSR)-derived classifications for Chinese ready foods using routinely available on-pack information. The model generates predictions across five study-defined categories (A–E). These predictions do not represent an independent assessment of product healthfulness. External validation against HSR ratings calculated from fully observed inputs is required before practical application.
+
+The scripts for data preprocessing, model training and evaluation, together with the model configurations, will be made publicly available upon publication.
